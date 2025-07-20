@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head('Servicios - Btion')"></head>
+<body class="bg-gray-50 text-gray-800">
+<div th:replace="fragments/header :: site-header"></div>
+
+<!-- Introducción -->
+<section class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h1 class="text-4xl font-bold mb-4">Nuestros Servicios</h1>
+    <p class="text-lg text-gray-600">Descubre cómo usamos inteligencia artificial para revolucionar el marketing de nuestros clientes.</p>
+  </div>
+</section>
+
+<!-- Servicios principales -->
+<section class="py-10 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Análisis predictivo</h3>
+      <p>Anticipamos comportamientos, tendencias y oportunidades con modelos avanzados de IA entrenados en tus datos.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Automatización de campañas</h3>
+      <p>Configuramos, ejecutamos y optimizamos campañas en tiempo real, sin intervención humana constante.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Contenido generado por IA</h3>
+      <p>Desde copies para anuncios hasta blogs y correos personalizados. Todo adaptado a tu audiencia y objetivos.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Email marketing inteligente</h3>
+      <p>Secuencias automáticas con personalización dinámica basada en comportamiento y segmentación predictiva.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Optimización de SEO con IA</h3>
+      <p>Análisis de keywords, generación de contenido y mejora de posicionamiento con herramientas inteligentes.</p>
+    </div>
+    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold mb-2">Asistentes conversacionales</h3>
+      <p>Implementamos chatbots con IA entrenada para atender, informar y vender 24/7 en tu web y redes sociales.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA final -->
+<section class="py-20 bg-indigo-600 text-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-6">¿Te interesa alguno de estos servicios?</h2>
+    <p class="mb-8">Agenda una demo personalizada y descubre cómo podemos aplicarlo a tu negocio.</p>
+    <a th:href="@{/contacto}" class="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100">Solicita una demo</a>
+  </div>
+</section>
+
+<div th:replace="fragments/footer :: site-footer"></div>
+</body>
+</html>

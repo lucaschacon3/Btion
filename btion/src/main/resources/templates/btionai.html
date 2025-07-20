@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head('Automatización IA para Meta - Btion')"></head>
+<body class="bg-gray-50 text-gray-800">
+
+<div th:replace="fragments/header :: site-header"></div>
+
+<main class="max-w-6xl mx-auto p-8">
+
+  <!-- Flecha para volver -->
+  <a href="/" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold mb-8">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
+    Volver al inicio
+  </a>
+
+  <!-- Logos redes sociales -->
+  <section class="flex justify-center gap-12 mb-16 flex-wrap">
+    <div class="flex flex-col items-center space-y-3 w-32">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_(2019).png" alt="Facebook" class="h-16 object-contain" />
+      <span class="font-semibold text-lg">Facebook</span>
+    </div>
+    <div class="flex flex-col items-center space-y-3 w-32">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/768px-Facebook_Messenger_logo_2020.svg.png" alt="Messenger" class="h-16 object-contain" />
+      <span class="font-semibold text-lg">Messenger</span>
+    </div>
+    <div class="flex flex-col items-center space-y-3 w-32">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" class="h-16 object-contain" />
+      <span class="font-semibold text-lg">Instagram</span>
+    </div>
+    <div class="flex flex-col items-center space-y-3 w-32">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="h-16 object-contain" />
+      <span class="font-semibold text-lg">WhatsApp</span>
+    </div>
+  </section>
+
+  <!-- Soluciones IA -->
+  <section class="bg-white rounded-xl shadow-lg p-8">
+    <h2 class="text-2xl font-bold mb-6 text-indigo-700 text-center">Soluciones de IA para tus cuentas Meta</h2>
+    <ul class="space-y-4 max-w-3xl mx-auto text-gray-800 list-disc list-inside text-lg">
+      <li><strong>Automatización de respuestas:</strong> Responde instantáneamente a tus clientes con chatbots inteligentes.</li>
+      <li><strong>Segmentación predictiva:</strong> Identifica y dirige campañas a audiencias con alta probabilidad de conversión.</li>
+      <li><strong>Optimización de campañas:</strong> Ajusta dinámicamente los presupuestos para maximizar el ROI.</li>
+      <li><strong>Generación automática de contenido:</strong> Crea posts y anuncios personalizados usando IA.</li>
+      <li><strong>Análisis de sentimiento:</strong> Monitorea y responde a la opinión pública en tiempo real.</li>
+      <li><strong>Programación y publicación inteligente:</strong> Publica en los mejores horarios según el comportamiento de tus seguidores.</li>
+    </ul>
+  </section>
+
+</main>
+
+<div th:replace="fragments/footer :: site-footer"></div>
+
+</body>
+</html>

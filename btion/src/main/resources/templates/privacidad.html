@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head('Política de Privacidad - Btion')"></head>
+<body class="bg-gray-50 text-gray-800">
+<div th:replace="fragments/header :: site-header"></div>
+
+<main class="max-w-3xl mx-auto p-8">
+
+  <!-- Botón de regreso -->
+  <a href="/" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold mb-6">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+    </svg>
+    Volver al inicio
+  </a>
+
+  <!-- Título -->
+  <h1 class="text-3xl font-bold text-center mb-4">🛡️ Política de Privacidad de BtionAI (Versión Beta)</h1>
+  <p class="text-sm text-center text-gray-500 mb-10"><strong>Última actualización:</strong> 20 de julio de 2025</p>
+
+  <!-- Contenido -->
+  <section class="space-y-10 text-lg leading-relaxed">
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">📌 ¿Qué datos recopilamos?</h2>
+      <p>Durante esta fase, la aplicación puede acceder a:</p>
+      <ul class="list-disc list-inside mt-2">
+        <li>Nombre de usuario</li>
+        <li>Comentarios en tus publicaciones</li>
+        <li>Mensajes directos recibidos</li>
+        <li>Estadísticas de interacción y rendimiento de tus publicaciones</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">🧠 ¿Para qué usamos esta información?</h2>
+      <p>Los datos recopilados se utilizan con el fin de:</p>
+      <ul class="list-disc list-inside mt-2">
+        <li>Mostrarte análisis generales sobre tus interacciones</li>
+        <li>Identificar posibles clientes o leads</li>
+        <li>Brindarte sugerencias automatizadas mediante inteligencia artificial</li>
+      </ul>
+      <p class="mt-2 text-sm text-gray-600">*Esta funcionalidad es experimental y puede cambiar en versiones futuras.*</p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">🔒 Almacenamiento y seguridad</h2>
+      <p>Todos los datos se almacenan de forma segura en servidores controlados por el equipo de desarrollo de BtionAI.</p>
+      <p class="mt-1">No compartimos esta información con terceros.</p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">🧪 Aviso sobre la versión Beta</h2>
+      <p>Este producto aún se encuentra en desarrollo. Estamos trabajando activamente para mejorar la privacidad, seguridad y transparencia del servicio.</p>
+    </div>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-2">📬 Contacto</h2>
+      <p>Si tienes preguntas o comentarios, puedes escribirnos a:</p>
+      <p class="mt-1 font-semibold text-indigo-700">btion.agency@gmail.com</p>
+    </div>
+
+  </section>
+</main>
+
+<div th:replace="fragments/footer :: site-footer"></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head('Testimonios - Btion')"></head>
+<body class="bg-gray-50 text-gray-800">
+<div th:replace="fragments/header :: site-header"></div>
+
+<!-- Título e introducción -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h1 class="text-4xl font-bold mb-4">Lo que dicen nuestros clientes</h1>
+    <p class="text-lg text-gray-600 mb-12">Empresas de todos los sectores confían en Btion para transformar su marketing con inteligencia artificial.</p>
+
+    <!-- Testimonios -->
+    <div class="grid md:grid-cols-2 gap-10 text-left">
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <p class="italic text-gray-700 mb-4">"Btion triplicó la efectividad de nuestras campañas en solo 2 meses."</p>
+        <div class="flex items-center gap-4 mt-6">
+          <div class="bg-indigo-100 text-indigo-700 rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg">AM</div>
+          <div>
+            <p class="font-semibold">Ana Morales</p>
+            <p class="text-sm text-gray-500">Directora de Marketing en GreenFit</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <p class="italic text-gray-700 mb-4">"Sus análisis predictivos nos permitieron actuar antes que la competencia."</p>
+        <div class="flex items-center gap-4 mt-6">
+          <div class="bg-indigo-100 text-indigo-700 rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg">PA</div>
+          <div>
+            <p class="font-semibold">Pedro Álvarez</p>
+            <p class="text-sm text-gray-500">CEO en Viajes Pro</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <p class="italic text-gray-700 mb-4">"Gracias a Btion, reducimos el coste por adquisición en un 40%."</p>
+        <div class="flex items-center gap-4 mt-6">
+          <div class="bg-indigo-100 text-indigo-700 rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg">MC</div>
+          <div>
+            <p class="font-semibold">María Castillo</p>
+            <p class="text-sm text-gray-500">CMO en FarmaClick</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <p class="italic text-gray-700 mb-4">"Automatizamos todo nuestro email marketing sin perder personalización."</p>
+        <div class="flex items-center gap-4 mt-6">
+          <div class="bg-indigo-100 text-indigo-700 rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg">JL</div>
+          <div>
+            <p class="font-semibold">Javier López</p>
+            <p class="text-sm text-gray-500">Growth Manager en TechNova</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA final -->
+<section class="py-20 bg-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">¿Quieres resultados como estos?</h2>
+    <p class="text-gray-600 mb-8">Contáctanos hoy mismo y descubre cómo Btion puede ayudarte a crecer.</p>
+    <a th:href="@{/contacto}" class="bg-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-indigo-700 transition">Hablemos</a>
+  </div>
+</section>
+
+<div th:replace="fragments/footer :: site-footer"></div>
+</body>
+</html>

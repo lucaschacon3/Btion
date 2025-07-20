@@ -1,0 +1,14 @@
+<header class="bg-white shadow-md" th:fragment="site-header">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"><a th:href="@{/}" class="text-2xl font-bold text-indigo-600">
+    <img th:src="@{/img/logo_btion.png}" alt="Btion logo" class="h-20">
+  </a>
+
+    <nav class="space-x-6 hidden md:block">
+      <a th:href="@{/servicios}" class="text-gray-700 hover:text-indigo-600">Servicios</a>
+      <a th:href="@{/testimonios}" class="text-gray-700 hover:text-indigo-600">Testimonios</a>
+      <a th:href="@{/contacto}" class="text-gray-700 hover:text-indigo-600">Contacto</a>
+      <a th:href="@{/tarifas}" class="text-gray-700 hover:text-indigo-600">Tarifas</a>
+    </nav>
+    <a th:href="@{/btionai}" class="ml-4 px-4 py-2 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700 text-sm">Acceso BtionAI</a>
+  </div>
+</header>

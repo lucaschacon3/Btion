@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head :: head('Inicio - Btion')"></head>
+<body class="bg-gray-50 text-gray-800">
+<div th:replace="fragments/header :: site-header"></div>
+
+<!-- Hero principal -->
+<section class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white py-20">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <h2 class="text-5xl font-extrabold mb-6">Marketing Inteligente con IA</h2>
+    <p class="text-xl mb-8">Combinamos creatividad y tecnología para transformar tu estrategia digital.</p>
+    <a th:href="@{/contacto}" class="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100">Comienza ahora</a>
+  </div>
+</section>
+
+<!-- Beneficios -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-10">¿Por qué elegir Btion?</h3>
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+      <div class="bg-gray-100 p-6 rounded-2xl shadow-sm">
+        <h4 class="text-xl font-semibold mb-2">IA al servicio del marketing</h4>
+        <p>Automatizamos decisiones estratégicas para obtener mejores resultados con menos esfuerzo.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-2xl shadow-sm">
+        <h4 class="text-xl font-semibold mb-2">Personalización a escala</h4>
+        <p>Segmentamos audiencias con precisión para mensajes más relevantes y conversiones más altas.</p>
+      </div>
+      <div class="bg-gray-100 p-6 rounded-2xl shadow-sm">
+        <h4 class="text-xl font-semibold mb-2">Análisis en tiempo real</h4>
+        <p>Monitoreo constante de campañas para reaccionar con rapidez y ajustar estrategias sobre la marcha.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Servicios destacados -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-12">Lo que ofrecemos</h3>
+    <div class="grid md:grid-cols-3 gap-8 text-left">
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h4 class="text-lg font-semibold mb-2">Campañas Automatizadas</h4>
+        <p class="mb-4">Lanzamiento y optimización automática de campañas en múltiples canales.</p>
+        <a th:href="@{/servicios}" class="text-indigo-600 font-medium hover:underline">Ver más</a>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h4 class="text-lg font-semibold mb-2">Contenido por IA</h4>
+        <p class="mb-4">Textos, imágenes y anuncios generados de forma automática y optimizada.</p>
+        <a th:href="@{/servicios}" class="text-indigo-600 font-medium hover:underline">Ver más</a>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
+        <h4 class="text-lg font-semibold mb-2">Predicción de comportamiento</h4>
+        <p class="mb-4">Modelos inteligentes que anticipan decisiones de tus clientes.</p>
+        <a th:href="@{/servicios}" class="text-indigo-600 font-medium hover:underline">Ver más</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA final -->
+<section class="py-20 bg-indigo-600 text-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6">¿Listo para llevar tu marketing al siguiente nivel?</h3>
+    <p class="mb-8">Agenda una demo gratuita y descubre cómo Btion puede ayudarte a crecer con IA.</p>
+    <a th:href="@{/contacto}" class="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100">Agenda tu demo</a>
+  </div>
+</section>
+
+<div th:replace="fragments/footer :: site-footer"></div>
+</body>
+</html>
