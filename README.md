@@ -1,3 +1,3 @@
 # Btion
 
-AI marketing
+AI marketing agency
